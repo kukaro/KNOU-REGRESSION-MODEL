@@ -4,3 +4,4 @@ market
 market.predict <- predict(market.lm, newdata = market)
 error <- market$Y - market.predict
 sum(error)
+anova.table <- anova(market.lm)
