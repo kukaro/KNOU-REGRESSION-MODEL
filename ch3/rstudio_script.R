@@ -1,0 +1,6 @@
+market <- read.table('./market-1.txt', header=T)
+market.lm <- lm(Y ~ X, data = market)
+plot(market$X, market$Y, xlab='Advertising Fee', ylab='Total Sales', pch=19)
+title("Scatterplot of Advertising Fees and Sales ")
+abline(market.lm)
+identify(market$X, market$Y)
