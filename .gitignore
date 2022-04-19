@@ -41,3 +41,5 @@ vignettes/*.pdf
 .idea
 .vscode
 .DS_Store
+
+~*
