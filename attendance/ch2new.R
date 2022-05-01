@@ -32,5 +32,6 @@ avPlots(h2.lm)
 health.lm.anova <- anova(h2.lm)
 health.lm.anova
 
+par(mfrow = c(1, 2))
 plot(health$X1, as.vector(h2.lm$residuals))
-identify(health$X1, as.vector(h2.lm$residuals))
+plot(health$X4, as.vector(h2.lm$residuals))
